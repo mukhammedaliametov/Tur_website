@@ -163,40 +163,40 @@
   }
 }
 
-#about-link{
+.section-title {
   text-align: center;
   padding: 50px 10px;
-  h1{
+  h1 {
     font-size: 3rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-family: "Lobster", cursive;
     color: #042e90;
     padding: 10px 0px;
   }
-  p{
+  p {
     font-size: 1.1rem;
     color: #000000b6;
   }
 }
 
-#about{
+#about {
   display: flex;
   justify-content: space-between;
   padding: 50px 90px;
-  img{
+  img {
     width: 50%;
     border-radius: 20px;
   }
-  .about-title{
+  .about-title {
     padding: 30px 50px;
-    h1{
+    h1 {
       color: #042e90;
-      border-bottom: 3px solid #00000060;
+      border-bottom: 3px solid #042e90;
       padding: 10px;
       text-align: center;
       font-family: "Ubuntu", sans-serif;
     }
-    p{
+    p {
       font-size: 1.2rem;
       color: #000000a4;
       margin-bottom: 20px;
@@ -204,7 +204,7 @@
       font-weight: 600;
       font-family: "Kanit", sans-serif;
     }
-    a{
+    a {
       background: rgb(0, 18, 255);
       text-decoration: none;
       color: #fff;
@@ -213,15 +213,69 @@
       border-radius: 5px;
     }
   }
-  @media only screen and (max-width: 920px){
-    &{
+  @media only screen and (max-width: 920px) {
+    & {
       flex-direction: column;
       padding: 50px 10px;
-      img{
+      img {
         width: 100%;
       }
-      .about-title{
+      .about-title {
         padding: 30px 10px;
+      }
+    }
+  }
+}
+
+#services {
+  background-color: #ffffffc2;
+  .cards-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 60px;
+    gap: 20px;
+    .card {
+      display: flex;
+      box-shadow: 1px 1px 2px #000;
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+      overflow: hidden;
+      border-radius: 5px;
+      &-img {
+        img {
+          width: 100%;
+          height: 40vh;
+        }
+      }
+      &-title {
+        margin: 0px 30px;
+        text-align: left;
+        padding: 15px 10px;
+        font-size: 1.2rem;
+        color: #042e90;
+        i {
+          font-size: 1.3rem;
+          padding-right: 10px;
+        }
+        span{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 920px){
+    .cards-container{
+      display: flex;
+      flex-direction: column;
+      padding: 50px 10px;
+      .card {
+        &-img {
+          img {
+            width: 100%;
+            height: 30vh;
+          }
+        }
       }
     }
   }
