@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  // Start of header style
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a9805;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    .logo {
+      color: #fff;
+      cursor: pointer;
+      font-family: 'Ubuntu', sans-serif;
+      padding: 20px;
+    }
+    .nav {
+      display: flex;
+      margin-right: 20px;
+      & li {
+        margin: 0px 20px;
+        list-style-type: none;
+      }
+      & a {
+        text-decoration: none;
+        color: #ffffff;
+        padding-bottom: 25px;
+        font-family: 'Roboto Mono', monospace;
+        &:hover {
+          border-bottom: 5px solid #fff;
+        }
+      }
+    }
+    @media only screen and (max-width: 920px) {
+      .nav {
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        background-color: #3b9805;
+        top: 70px;
+        width: 0%;
+        text-align: center;
+        height: 80vh;
+        transition: 0.5s ease-in-out;
+        z-index: 998;
+        &.active {
+          background-color: #3a9805;
+          width: 100%;
+          a {
+            display: block;
+            
+          }
+          .border-b{
+            border-bottom: none;
+          }
+        }
+        & a {
+          display: none;
+          font-size: 1.2rem;
+          border-bottom: 1px solid #ffffff;
+          padding: 50px 0px;
+        }
+      }
+    }
+  }
+  .hamburger {
+    display: none;
+    @media only screen and (max-width: 920px) {
+      & {
+        display: block;
+        color: #ffffff;
+        padding: 6px 20px;
+        font-size: 1.7rem;
+        .fa-bars {
+          display: block;
+        }
+        .fa-times {
+          display: none;
+        }
+        &.active .fa-times {
+          display: block;
+        }
+        &.active .fa-bars {
+          display: none;
+        }
+      }
+    }
+  }
+}

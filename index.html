@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tur Web Site</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Start of header -->
+    <div class="navigation">
+      <h1 class="logo">Travel <i class="fa-solid fa-plane-departure"></i></h1>
+      <ul class="nav">
+        <li id="closeitem" onclick="closeMenu()" class="nav-mobile-item">
+          <a href="#home"> <i class="fas fa-home"></i> Home </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#about-link">
+            <i class="fa-solid fa-circle-info"></i> About
+          </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#about-link"> <i class="fa-solid fa-server"></i> Services </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#menu-link"> <i class="fa-solid fa-book"></i> Blog </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#contact-link" class="border-b">
+            <i class="fa-solid fa-address-book"></i> Contact
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+      </div>
+    </div>
+    <!-- End of header -->
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
