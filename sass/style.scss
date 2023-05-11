@@ -339,3 +339,55 @@
     }
   }
 }
+
+#contact{
+  background-color: #E8F1FA;
+  text-align: center;
+  .contact-cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    .card{
+      background-color: #fff;
+      margin: 0px 10px;
+      padding: 20px;
+      border-radius: 5px;
+      width: 60%;
+      i{
+        font-size: 3rem;
+        color: #042e90;
+        padding: 20px 0px;
+      }
+      h3{
+        font-size: 1.6rem;
+        padding: 10px 0px;
+        color: #042e90;
+        font-family: "Ubuntu", sans-serif;
+      }
+      p{
+        padding: 0px 10px;
+        color: #042e90;
+        font-size: 1rem;
+        font-family: "Kanit", sans-serif;
+      }
+    }
+  }
+  @media only screen and (max-width: 920px){
+    &{
+      iframe{
+        width: 100%;
+        height: 30vh;
+      }
+      .contact-cards{
+        flex-direction: column;
+        padding: 30px 20px;
+        margin-bottom: 10px;
+        .card{
+          margin: 0;
+          width: 95%;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
