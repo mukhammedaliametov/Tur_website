@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3a9805;
+  background-color: #042F90;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -44,7 +44,7 @@
     position: absolute;
     flex-direction: column;
     left: 0;
-    background-color: #3b9805;
+    background-color: #042F90;
     top: 70px;
     width: 0%;
     text-align: center;
@@ -53,7 +53,7 @@
     z-index: 998;
   }
   * .navigation .nav.active {
-    background-color: #3a9805;
+    background-color: #042F90;
     width: 100%;
   }
   * .navigation .nav.active a {
