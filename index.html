@@ -1,107 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is website in the Tur -->
+    <title>Tur Web Site</title>
 
-  <!-- This is website in the Tur -->
-  <title>Tur Web Site</title>
+    <!-- Import Style Css -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- Import Style Css -->
-  <link rel="stylesheet" href="./css/style.css" />
+    <!-- Import FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <!-- Import FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <!-- Start of header -->
-  <div class="navigation">
-    <h1 class="logo">Travel <i class="fa-solid fa-plane-departure"></i></h1>
-    <ul class="nav">
-      <li id="closeitem" onclick="closeMenu()" class="nav-mobile-item">
-        <a href="#home"> <i class="fas fa-home"></i> Home </a>
-      </li>
-      <li id="closeitem" onclick="closeMenu()">
-        <a href="#about-link">
-          <i class="fa-solid fa-circle-info"></i> About Us
-        </a>
-      </li>
-      <li id="closeitem" onclick="closeMenu()">
-        <a href="#about-link">
-          <i class="fa-solid fa-server"></i> Services
-        </a>
-      </li>
-      <li id="closeitem" onclick="closeMenu()">
-        <a href="#menu-link"> <i class="fa-solid fa-book"></i> Blog </a>
-      </li>
-      <li id="closeitem" onclick="closeMenu()">
-        <a href="#contact-link" class="border-b">
-          <i class="fa-solid fa-address-book"></i> Contact
-        </a>
-      </li>
-    </ul>
-    <div class="hamburger">
-      <i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-times"></i>
+  <body>
+    <!-- Start of header -->
+    <div class="navigation">
+      <h1 class="logo">Travel <i class="fa-solid fa-plane-departure"></i></h1>
+      <ul class="nav">
+        <li id="closeitem" onclick="closeMenu()" class="nav-mobile-item">
+          <a href="#home"> <i class="fas fa-home"></i> Home </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#about-link">
+            <i class="fa-solid fa-circle-info"></i> About Us
+          </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#about-link">
+            <i class="fa-solid fa-server"></i> Services
+          </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#menu-link"> <i class="fa-solid fa-book"></i> Blog </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#contact-link" class="border-b">
+            <i class="fa-solid fa-address-book"></i> Contact
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+      </div>
     </div>
-  </div>
-  <!-- End of header -->
-  <!-- Start of home section -->
-  <section id="home">
-    <div class="home-title">
-      <h1><span>Travel</span> Web-Site</h1>
+    <!-- End of header -->
+    <!-- Start of home section -->
+    <section id="home">
+      <div class="home-title">
+        <h1><span>Travel</span> Web-Site</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio
+          aut, vero sunt aliquid rerum molestiae dolorem eaque placeat ipsam?
+        </p>
+        <a href="">Learn More</a>
+      </div>
+    </section>
+    <!-- End of home section -->
+    <!-- Start of about section -->
+    <div class="section-title" id="about-link">
+      <h1>About Us</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio
-        aut, vero sunt aliquid rerum molestiae dolorem eaque placeat ipsam?
+        Sit consectetur adipisicing elit. Aut molestiae laboriosam
+        reprehenderit!
       </p>
-      <a href="">Learn More</a>
     </div>
-  </section>
-  <!-- End of home section -->
-  <!-- Start of about section -->
-  <div class="section-title" id="about-link">
-    <h1>About Us</h1>
-    <p>
-      Sit consectetur adipisicing elit. Aut molestiae laboriosam
-      reprehenderit!
-    </p>
-  </div>
-  <div id="about">
-    <img src="./images/about-img.jpeg" alt="" class="about-img" />
-    <div class="about-title">
-      <h1>Travel in the Nukus</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed
-        veniam similique amet cupiditate quisquam sit quia et! Voluptatem
-        tempore delectus quaerat neque saepe temporibus molestiae rerum
-        blanditiis deleniti natus.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam id dolor
-        sapiente voluptas eum reprehenderit aliquam saepe natus perspiciatis,
-        in similique voluptatibus qui minima quis.
-      </p>
-      <a href="" class="">See more</a>
+    <div id="about">
+      <img src="./images/about-img.jpeg" alt="" class="about-img" />
+      <div class="about-title">
+        <h1>Travel in the Nukus</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed
+          veniam similique amet cupiditate quisquam sit quia et! Voluptatem
+          tempore delectus quaerat neque saepe temporibus molestiae rerum
+          blanditiis deleniti natus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam id dolor
+          sapiente voluptas eum reprehenderit aliquam saepe natus perspiciatis,
+          in similique voluptatibus qui minima quis.
+        </p>
+        <a href="" class="">See more</a>
+      </div>
     </div>
-  </div>
-  <!-- End of about section -->
-  <div class="section-title" id="services-link">
-    <h1>Services</h1>
-    <p>
-      Sit consectetur adipisicing elit. Aut molestiae laboriosam
-      reprehenderit!
-    </p>
+    <!-- End of about section -->
+
     <!-- Start of services section -->
     <div id="services">
+      <div class="section-title" id="services-link">
+        <h1>Services</h1>
+        <p>
+          Sit consectetur adipisicing elit. Aut molestiae laboriosam
+          reprehenderit!
+        </p>
+      </div>
       <div class="cards-container">
         <div class="card">
           <div class="card-img">
-            <img src="./images/cards-images/img-1.jpg" alt="">
+            <img src="./images/cards-images/img-1.jpg" alt="" />
           </div>
           <span class="card-title">
             <i class="fa-solid fa-location-dot"></i> New-Yourk, Amerika
@@ -109,7 +114,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./images/cards-images/img-2.jpg" alt="">
+            <img src="./images/cards-images/img-2.jpg" alt="" />
           </div>
           <span class="card-title">
             <i class="fa-solid fa-location-dot"></i> Paris, France
@@ -117,7 +122,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./images/cards-images/img-3.jpg" alt="">
+            <img src="./images/cards-images/img-3.jpg" alt="" />
           </div>
           <span class="card-title">
             <i class="fa-solid fa-location-dot"></i> Astana, Kazakhstan
@@ -125,7 +130,10 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="https://www.civitatis.com/f/uzbekistan/nukus/tour-mizdakhan-museo-igor-savitsky-r32.jpg" alt="">
+            <img
+              src="https://www.civitatis.com/f/uzbekistan/nukus/tour-mizdakhan-museo-igor-savitsky-r32.jpg"
+              alt=""
+            />
           </div>
           <span class="card-title">
             <i class="fa-solid fa-location-dot"></i> Nukus city, Karakalpakstan
@@ -133,7 +141,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./images/cards-images/img-5.jpg" alt="">
+            <img src="./images/cards-images/img-5.jpg" alt="" />
           </div>
           <span class="card-title">
             <i class="fa-solid fa-location-dot"></i> Madrid, Italy
@@ -141,7 +149,7 @@
         </div>
         <div class="card">
           <div class="card-img">
-            <img src="./images/cards-images/img-6.jpg" alt="">
+            <img src="./images/cards-images/img-6.jpg" alt="" />
           </div>
           <span class="card-title">
             <i class="fa-solid fa-location-dot"></i> London, Britany
@@ -150,8 +158,40 @@
       </div>
     </div>
     <!-- End of services section -->
+    <!-- Start of Blog section -->
+    <div class="section-title" id="services-link">
+      <h1>Blog</h1>
+      <p>
+        Sit consectetur adipisicing elit. Aut molestiae laboriosam
+        reprehenderit!
+      </p>
+    </div>
+    <div id="blog">
+      <img class="global-img" src="./images/blog-img-bg.jpg" alt="" />
+      <div class="blog-content">
+        <img src="./images/blog-img.jpg" alt="" />
+        <div class="blog-card">
+          <i class="fa-regular fa-compass"></i>
+          <h2>Travel in the world</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
+            eaque autem. Quos sapiente accusantium fuga excepturi error qui.
+          </p>
+        </div>
+        <div class="blog-card">
+          <i class="fa-solid fa-globe"></i>
+          <h2>Travel in the world</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
+            eaque autem. Quos sapiente accusantium fuga excepturi error qui
+            fugit nobis.
+          </p>
+        </div>
+        <img src="./images/blog-img2.jpg" style="height: 60vh;" alt="" />
+      </div>
+    </div>
+    <!-- End of Blog section -->
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>

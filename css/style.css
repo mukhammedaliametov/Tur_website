@@ -225,7 +225,7 @@
 }
 
 #services {
-  background-color: rgba(255, 255, 255, 0.7607843137);
+  background-color: #E8F1FA;
 }
 #services .cards-container {
   display: grid;
@@ -241,6 +241,7 @@
   text-align: left;
   overflow: hidden;
   border-radius: 5px;
+  background-color: #fff;
 }
 #services .cards-container .card-img img {
   width: 100%;
@@ -269,6 +270,64 @@
   #services .cards-container .card-img img {
     width: 100%;
     height: 30vh;
+  }
+}
+
+#blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
+  padding-left: 0px;
+}
+#blog .global-img {
+  width: 45%;
+  padding: 40px;
+}
+#blog .blog-content {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#blog .blog-content img {
+  width: 100%;
+}
+#blog .blog-content .blog-card {
+  border: 5px dashed #042e90;
+  padding: 10px;
+  text-align: center;
+}
+#blog .blog-content .blog-card i {
+  font-size: 6rem;
+  padding: 10px 0px;
+  color: #042e90;
+  padding-top: 30px;
+}
+#blog .blog-content .blog-card h2 {
+  font-size: 1.6rem;
+  padding: 10px 0px;
+  color: #042e90;
+  font-family: "Ubuntu", sans-serif;
+}
+#blog .blog-content .blog-card p {
+  text-align: left;
+  padding: 0px 10px;
+  color: #042e90;
+  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+}
+@media only screen and (max-width: 920px) {
+  #blog {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+  #blog .global-img {
+    width: 100%;
+    padding: 10px;
+  }
+  #blog .blog-content {
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 20px 0px;
   }
 }
 
