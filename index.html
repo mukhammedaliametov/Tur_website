@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- This is a proect created in Muhammedali Ametov -->
+
     <!-- This is website in the Tur -->
     <title>Tur Web Site</title>
 
@@ -19,10 +21,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Import Aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
-    <!-- Start of header -->
+    <!-- Start of Header -->
     <div class="navigation">
       <h1 class="logo">Travel <i class="fa-solid fa-plane-departure"></i></h1>
       <ul class="nav">
@@ -35,12 +40,12 @@
           </a>
         </li>
         <li id="closeitem" onclick="closeMenu()">
-          <a href="#about-link">
+          <a href="#services-link">
             <i class="fa-solid fa-server"></i> Services
           </a>
         </li>
         <li id="closeitem" onclick="closeMenu()">
-          <a href="#menu-link"> <i class="fa-solid fa-book"></i> Blog </a>
+          <a href="#blog-link"> <i class="fa-solid fa-book"></i> Blog </a>
         </li>
         <li id="closeitem" onclick="closeMenu()">
           <a href="#contact-link" class="border-b">
@@ -53,10 +58,10 @@
         <i class="fa-solid fa-times"></i>
       </div>
     </div>
-    <!-- End of header -->
-    <!-- Start of home section -->
+    <!-- End of Header -->
+    <!-- Start of Home section -->
     <section id="home">
-      <div class="home-title">
+      <div class="home-title" data-aos="fade-down" data-aos-duration="1500">
         <h1><span>Travel</span> Web-Site</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias optio
@@ -65,9 +70,9 @@
         <a href="">Learn More</a>
       </div>
     </section>
-    <!-- End of home section -->
-    <!-- Start of about section -->
-    <div class="section-title" id="about-link">
+    <!-- End of Home section -->
+    <!-- Start of About section -->
+    <div class="section-title" id="about-link" data-aos="fade-down">
       <h1>About Us</h1>
       <p>
         Sit consectetur adipisicing elit. Aut molestiae laboriosam
@@ -75,8 +80,8 @@
       </p>
     </div>
     <div id="about">
-      <img src="./images/about-img.jpeg" alt="" class="about-img" />
-      <div class="about-title">
+      <img src="./images/about-img.jpeg" alt="" class="about-img" data-aos="fade-down" data-aos-duration="1500" />
+      <div class="about-title" data-aos="fade-up" data-aos-duration="2000">
         <h1>Travel in the Nukus</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed
@@ -92,11 +97,10 @@
         <a href="" class="">See more</a>
       </div>
     </div>
-    <!-- End of about section -->
-
-    <!-- Start of services section -->
+    <!-- End of About section -->
+    <!-- Start of Services section -->
     <div id="services">
-      <div class="section-title" id="services-link">
+      <div class="section-title" id="services-link" data-aos="fade-down">
         <h1>Services</h1>
         <p>
           Sit consectetur adipisicing elit. Aut molestiae laboriosam
@@ -104,7 +108,7 @@
         </p>
       </div>
       <div class="cards-container">
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="2000">
           <div class="card-img">
             <img src="./images/cards-images/img-1.jpg" alt="" />
           </div>
@@ -112,7 +116,7 @@
             <i class="fa-solid fa-location-dot"></i> New-Yourk, Amerika
           </span>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="2000">
           <div class="card-img">
             <img src="./images/cards-images/img-2.jpg" alt="" />
           </div>
@@ -120,7 +124,7 @@
             <i class="fa-solid fa-location-dot"></i> Paris, France
           </span>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="2000">
           <div class="card-img">
             <img src="./images/cards-images/img-3.jpg" alt="" />
           </div>
@@ -128,7 +132,7 @@
             <i class="fa-solid fa-location-dot"></i> Astana, Kazakhstan
           </span>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="2000">
           <div class="card-img">
             <img
               src="https://www.civitatis.com/f/uzbekistan/nukus/tour-mizdakhan-museo-igor-savitsky-r32.jpg"
@@ -139,7 +143,7 @@
             <i class="fa-solid fa-location-dot"></i> Nukus city, Karakalpakstan
           </span>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="2000">
           <div class="card-img">
             <img src="./images/cards-images/img-5.jpg" alt="" />
           </div>
@@ -147,7 +151,7 @@
             <i class="fa-solid fa-location-dot"></i> Madrid, Italy
           </span>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="2000">
           <div class="card-img">
             <img src="./images/cards-images/img-6.jpg" alt="" />
           </div>
@@ -157,9 +161,9 @@
         </div>
       </div>
     </div>
-    <!-- End of services section -->
+    <!-- End of Services section -->
     <!-- Start of Blog section -->
-    <div class="section-title" id="services-link">
+    <div class="section-title" id="blog-link" data-aos="fade-down">
       <h1>Blog</h1>
       <p>
         Sit consectetur adipisicing elit. Aut molestiae laboriosam
@@ -167,8 +171,8 @@
       </p>
     </div>
     <div id="blog">
-      <img class="global-img" src="./images/blog-img-bg.jpg" alt="" />
-      <div class="blog-content">
+      <img class="global-img" src="./images/blog-img-bg.jpg" alt="" data-aos="fade-down" data-aos-duration="1500"/>
+      <div class="blog-content" data-aos="fade-up" data-aos-duration="2000">
         <img src="./images/blog-img.jpg" alt="" />
         <div class="blog-card">
           <i class="fa-regular fa-compass"></i>
@@ -193,8 +197,8 @@
     <!-- End of Blog section -->
     <!-- Start of Contact section -->
     <div id="contact">
-      <div class="section-title" id="services-link">
-        <h1>Contact</h1>
+      <div class="section-title" id="contact-link" data-aos="fade-down">
+        <h1>Contact Us</h1>
         <p>
           Sit consectetur adipisicing elit. Aut molestiae laboriosam
           reprehenderit!
@@ -209,19 +213,21 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         ></iframe>
         <div class="contact-cards">
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-duration="1000">
             <i class="fa-solid fa-location-dot"></i>
             <h3>Location</h3>
             <p>Nukus City, Karakalpakstan</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-down" data-aos-duration="1000">
             <i class="fa-sharp fa-solid fa-phone"></i>
             <h3>Phone Number</h3>
             <p>+998(93)xxx-xx-xx</p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-up" data-aos-duration="1000">
             <i class="fa-solid fa-envelope"></i>
             <h3>Email</h3>
             <p>example007@gmail.com</p>
@@ -230,7 +236,30 @@
       </div>
     </div>
     <!-- End of Contact section -->
+    <!-- Start of footer -->
+    <footer>
+      <h3>Tur-web.netlify.app</h3>
+      <div class="networks">
+        <a href=""><i class="fa-brands fa-telegram"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p>Copyright &copy;2023. All Rights Reseved.</p>
+      <a class="dev" href="https://ametov.vercel.app"><i class="fa-solid fa-terminal"></i> Muhammedali Ametov</a>
+    </footer>
+    <!-- End of footer -->
+
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
+
+    <!-- Aos Anmation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

@@ -225,7 +225,7 @@
 }
 
 #services {
-  background-color: #E8F1FA;
+  background-color: #e8f1fa;
 }
 #services .cards-container {
   display: grid;
@@ -332,7 +332,7 @@
 }
 
 #contact {
-  background-color: #E8F1FA;
+  background-color: #e8f1fa;
   text-align: center;
 }
 #contact .contact-cards {
@@ -379,6 +379,41 @@
     width: 95%;
     margin: 10px;
   }
+}
+
+footer {
+  background-color: #042e90;
+  color: #fff;
+  padding: 30px 50px;
+  text-align: center;
+}
+footer h3 {
+  font-size: 1.6rem;
+  padding: 10px 0px;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+footer .networks {
+  padding: 10px 0px;
+}
+footer .networks a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 1.4rem;
+}
+footer p {
+  padding: 0px 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Kanit", sans-serif;
+}
+footer .dev {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0px;
+  margin: 20px 0px;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
